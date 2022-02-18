@@ -1,0 +1,104 @@
+List directory contents.	
+ls
+
+Change directory	
+cd /home/username/XX
+
+Find some text in file. eg. i want to find "error" in log.text file		
+grep "error" log.txt
+
+Run command as admin/super user	
+sudo su
+
+Show/identify current working directory/path		
+pwd
+
+Move file from 1 location to another location	
+mv file1 /home/jeffrey/foo/
+
+Rename file.		
+mv file1.txt file.txt		modify		rm
+
+Copy file. (file and destination)
+cp -i text.txt tigger 			
+
+Create new file.	
+touch file1.txt
+
+Remove file.	
+unlink / rm file1.txt
+
+Remove directory.	
+rmdir /home/jeffrey/foo/doo/		rm, -r
+
+Remove multiple file in directory.	
+rm -v filename1 filename2 filename3
+
+Make directory	
+mkdir -v name
+
+Change permission folder or file. eg. change permission file to execute file/read only	
+chmod +r filename
+
+Change owner of file permission	
+chown root file.txt
+
+Clear terminal	
+Ctrl+L / reset, clear
+
+How to install new package/ update		
+sudo apt-get update
+
+Check external ip	
+curl ident.me, curl ifconfig.me, host myip.opendns.com resolver1.opendns.com
+
+Check internal ip	
+hostname -I	* -i: ip-addresses, -I: all-ip-addresses
+
+Check connection between system network with website. eg google.	
+ping -c X google.com	* X is appear how many times, Ctrl+c to stop
+
+Escape super user:	
+exit / Ctrl+D
+
+Add permissions
+chmod +rwx filename	* "r":read, "w":write, "x":execute, "-":remove permission, "+":add permission
+
+Remove permissions
+chmod -rwx directoryname
+
+Allow executable permissions
+chmod +x filename
+
+Take out write and executable permissions
+chmod -wx filename
+
+No permission to anybody else
+chmod 400 header
+
+Give read permission to everybody;400 for yourself, 40 for your group, and 4 for other
+chmod 444 header
+
+Find file location in current and sub directories
+find . -name file.txt
+
+To sort the file names in the last modification time in reverse order
+ls -ltr
+
+View file
+vim filename
+
+Append text to a file
+echo "this is a new line" >> file.txt
+
+To navigate into the root directory
+cd /
+
+To navigate to your home directory
+cd
+
+To navigate up one directory level
+cd ..
+
+To navigate to the previous directory (or back)
+cd -
